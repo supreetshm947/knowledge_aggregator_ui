@@ -30,7 +30,6 @@ if st.button("Submit Query"):
                 )
                 if response.status_code == 200:
                     result = response.text
-                    print(result)
                     st.success("Query Processed Successfully!")
                     st.write("### 🎯 Result:")
                     st.markdown(result)
